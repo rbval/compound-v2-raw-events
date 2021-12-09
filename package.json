@@ -1,0 +1,16 @@
+{
+  "name": "compound-v2-ethereum-raw-events",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ rbval/compound-v2-ethereum-raw-events",
+    "create-local": "graph create --node http://localhost:8020/ rbval/compound-v2-ethereum-raw-events",
+    "remove-local": "graph remove --node http://localhost:8020/ rbval/compound-v2-ethereum-raw-events",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 rbval/compound-v2-ethereum-raw-events"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.23.1",
+    "@graphprotocol/graph-ts": "0.23.1"
+  }
+}
