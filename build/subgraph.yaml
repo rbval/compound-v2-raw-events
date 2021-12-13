@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Unitroller
@@ -21,7 +21,7 @@ dataSources:
         - FailureV0Event
       abis:
         - name: Unitroller
-          file: ./abis/Unitroller.json
+          file: Unitroller/abis/Unitroller.json
       eventHandlers:
         - event: NewPendingImplementation(address,address)
           handler: handleNewPendingImplementation
@@ -33,7 +33,7 @@ dataSources:
           handler: handleNewAdmin
         - event: Failure(uint256,uint256,uint256)
           handler: handleFailure
-      file: ./src/mapping.ts
+      file: Unitroller/Unitroller.wasm
   - kind: ethereum/contract
     name: Comptroller12
     network: mainnet
@@ -49,11 +49,11 @@ dataSources:
         - MarketListedV0Event
       abis:
         - name: Comptroller12
-          file: ./abis/Comptroller12.json
+          file: Comptroller12/abis/Comptroller12.json
       eventHandlers:
         - event: MarketListed(address)
           handler: handleMarketListed
-      file: ./src/mapping.ts
+      file: Unitroller/Unitroller.wasm
 templates:
   - name: CToken
     kind: ethereum/contract
@@ -70,7 +70,7 @@ templates:
         - NewReserveFactorV0Event
       abis:
         - name: CToken
-          file: ./abis/CToken.json
+          file: CToken/abis/CToken.json
       eventHandlers:
         - event: AccrueInterest(uint256,uint256,uint256)
           handler: handleAccrueInterest0
@@ -78,4 +78,4 @@ templates:
           handler: handleAccrueInterest1
         - event: NewReserveFactor(uint256,uint256)
           handler: handleNewReserveFactor
-      file: ./src/mapping.ts
+      file: Unitroller/Unitroller.wasm
