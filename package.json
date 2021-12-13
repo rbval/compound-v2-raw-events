@@ -4,7 +4,7 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --access-token 7ef644967df14013a7bc43ec469ee011 --node https://api.thegraph.com/deploy/ rbval/compound-v2-ethereum-raw-events",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ rbval/compound-v2-ethereum-raw-events",
     "create-local": "graph create --node http://localhost:8020/ rbval/compound-v2-ethereum-raw-events",
     "remove-local": "graph remove --node http://localhost:8020/ rbval/compound-v2-ethereum-raw-events",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 rbval/compound-v2-ethereum-raw-events"
