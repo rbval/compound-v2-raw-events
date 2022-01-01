@@ -14,45 +14,45 @@ dataSources:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - NewPendingImplementationV0Event
-        - NewImplementationV0Event
-        - NewPendingAdminV0Event
-        - NewAdminV0Event
-        - FailureV0Event
+        - NewPendingImplementationV1Event
+        - NewImplementationV1Event
+        - NewPendingAdminV1Event
+        - NewAdminV1Event
+        - FailureV1Event
       abis:
         - name: Unitroller
           file: Unitroller/abis/Unitroller.json
       eventHandlers:
-        - event: NewPendingImplementation(address,address)
-          handler: handleNewPendingImplementation
-        - event: NewImplementation(address,address)
-          handler: handleNewImplementation
-        - event: NewPendingAdmin(address,address)
-          handler: handleNewPendingAdmin
-        - event: NewAdmin(address,address)
-          handler: handleNewAdmin
-        - event: Failure(uint256,uint256,uint256)
-          handler: handleFailure
+        - event: NewPendingImplementationV1(address,address)
+          handler: handleNewPendingImplementationV1
+        - event: NewImplementationV1(address,address)
+          handler: handleNewImplementationV1
+        - event: NewPendingAdminV1(address,address)
+          handler: handleNewPendingAdminV1
+        - event: NewAdminV1(address,address)
+          handler: handleNewAdminV1
+        - event: FailureV1(uint256,uint256,uint256)
+          handler: handleFailureV1
       file: Unitroller/Unitroller.wasm
   - kind: ethereum/contract
-    name: Comptroller12
+    name: Comptroller
     network: mainnet
     source:
       address: "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B"
-      abi: Comptroller12
+      abi: Comptroller
       startBlock: 7710671
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - MarketListedV0Event
+        - MarketListedV1Event
       abis:
-        - name: Comptroller12
-          file: Comptroller12/abis/Comptroller12.json
+        - name: Comptroller
+          file: Comptroller/abis/Comptroller.json
       eventHandlers:
-        - event: MarketListed(address)
-          handler: handleMarketListed
+        - event: MarketListedV1(address)
+          handler: handleMarketListedV1
       file: Unitroller/Unitroller.wasm
 templates:
   - name: CToken
@@ -65,17 +65,17 @@ templates:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - AccrueInterestV0Event
         - AccrueInterestV1Event
-        - NewReserveFactorV0Event
+        - AccrueInterestV2Event
+        - NewReserveFactorV1Event
       abis:
         - name: CToken
           file: CToken/abis/CToken.json
       eventHandlers:
-        - event: AccrueInterest(uint256,uint256,uint256)
-          handler: handleAccrueInterest0
-        - event: AccrueInterest(uint256,uint256,uint256,uint256)
-          handler: handleAccrueInterest1
-        - event: NewReserveFactor(uint256,uint256)
-          handler: handleNewReserveFactor
+        - event: AccrueInterestV1(uint256,uint256,uint256)
+          handler: handleAccrueInterestV1
+        - event: AccrueInterestV2(uint256,uint256,uint256,uint256)
+          handler: handleAccrueInterestV2
+        - event: NewReserveFactorV1(uint256,uint256)
+          handler: handleNewReserveFactorV1
       file: Unitroller/Unitroller.wasm

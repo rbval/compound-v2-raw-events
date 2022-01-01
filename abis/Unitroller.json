@@ -2,17 +2,32 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingAdmin",
-    "outputs": [{ "name": "", "type": "address" }],
+    "name": "pendingAdminV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [{ "name": "newPendingAdmin", "type": "address" }],
-    "name": "_setPendingAdmin",
-    "outputs": [{ "name": "", "type": "uint256" }],
+    "inputs": [
+      {
+        "name": "newPendingAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "_setPendingAdminV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "function"
@@ -20,8 +35,13 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "comptrollerImplementation",
-    "outputs": [{ "name": "", "type": "address" }],
+    "name": "comptrollerImplementationV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
@@ -29,8 +49,13 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "_acceptImplementation",
-    "outputs": [{ "name": "", "type": "uint256" }],
+    "name": "_acceptImplementationV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "function"
@@ -38,17 +63,32 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingComptrollerImplementation",
-    "outputs": [{ "name": "", "type": "address" }],
+    "name": "pendingComptrollerImplementationV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [{ "name": "newPendingImplementation", "type": "address" }],
-    "name": "_setPendingImplementation",
-    "outputs": [{ "name": "", "type": "uint256" }],
+    "inputs": [
+      {
+        "name": "newPendingImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "_setPendingImplementationV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "function"
@@ -56,8 +96,13 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "_acceptAdmin",
-    "outputs": [{ "name": "", "type": "uint256" }],
+    "name": "_acceptAdminV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "function"
@@ -65,8 +110,13 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "admin",
-    "outputs": [{ "name": "", "type": "address" }],
+    "name": "adminV1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
@@ -75,9 +125,15 @@
     "inputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "constructor"
+    "type": "constructor",
+    "name": "undefinedV1"
   },
-  { "payable": true, "stateMutability": "payable", "type": "fallback" },
+  {
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "fallback",
+    "name": "undefinedV2"
+  },
   {
     "anonymous": false,
     "inputs": [
@@ -92,44 +148,80 @@
         "type": "address"
       }
     ],
-    "name": "NewPendingImplementation",
+    "name": "NewPendingImplementationV1",
     "type": "event"
   },
   {
     "anonymous": false,
     "inputs": [
-      { "indexed": false, "name": "oldImplementation", "type": "address" },
-      { "indexed": false, "name": "newImplementation", "type": "address" }
+      {
+        "indexed": false,
+        "name": "oldImplementation",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newImplementation",
+        "type": "address"
+      }
     ],
-    "name": "NewImplementation",
+    "name": "NewImplementationV1",
     "type": "event"
   },
   {
     "anonymous": false,
     "inputs": [
-      { "indexed": false, "name": "oldPendingAdmin", "type": "address" },
-      { "indexed": false, "name": "newPendingAdmin", "type": "address" }
+      {
+        "indexed": false,
+        "name": "oldPendingAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newPendingAdmin",
+        "type": "address"
+      }
     ],
-    "name": "NewPendingAdmin",
+    "name": "NewPendingAdminV1",
     "type": "event"
   },
   {
     "anonymous": false,
     "inputs": [
-      { "indexed": false, "name": "oldAdmin", "type": "address" },
-      { "indexed": false, "name": "newAdmin", "type": "address" }
+      {
+        "indexed": false,
+        "name": "oldAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newAdmin",
+        "type": "address"
+      }
     ],
-    "name": "NewAdmin",
+    "name": "NewAdminV1",
     "type": "event"
   },
   {
     "anonymous": false,
     "inputs": [
-      { "indexed": false, "name": "error", "type": "uint256" },
-      { "indexed": false, "name": "info", "type": "uint256" },
-      { "indexed": false, "name": "detail", "type": "uint256" }
+      {
+        "indexed": false,
+        "name": "error",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "info",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "detail",
+        "type": "uint256"
+      }
     ],
-    "name": "Failure",
+    "name": "FailureV1",
     "type": "event"
   }
 ]

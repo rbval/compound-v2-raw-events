@@ -1,29 +1,29 @@
 import { CToken as CTokenTemplate } from '../generated/templates'
 import {
-  NewPendingImplementation,
-  NewImplementation,
-  NewPendingAdmin,
-  NewAdmin,
-  Failure
+  NewPendingImplementationV1,
+  NewImplementationV1,
+  NewPendingAdminV1,
+  NewAdminV1,
+  FailureV1
 } from "../generated/Unitroller/Unitroller"
 import {
-  AccrueInterest as AccrueInterest0,
-  AccrueInterest1,
-  NewReserveFactor,
+  AccrueInterestV1,
+  AccrueInterestV2,
+  NewReserveFactorV1,
 } from '../generated/templates/CToken/CToken'
-import { MarketListed } from "../generated/Comptroller12/Comptroller12";
+import { MarketListedV1 } from "../generated/Comptroller/Comptroller";
 
-import { NewPendingImplementationV0Event, NewImplementationV0Event, NewPendingAdminV0Event, NewAdminV0Event, FailureV0Event, MarketListedV0Event, AccrueInterestV0Event, AccrueInterestV1Event, NewReserveFactorV0Event } from "../generated/schema"
+import { NewPendingImplementationV1Event, NewImplementationV1Event, NewPendingAdminV1Event, NewAdminV1Event, FailureV1Event, MarketListedV1Event, AccrueInterestV1Event, AccrueInterestV2Event, NewReserveFactorV1Event } from "../generated/schema"
 
-export function handleNewPendingImplementation(
-  event: NewPendingImplementation
+export function handleNewPendingImplementationV1(
+  event: NewPendingImplementationV1
 ): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let newPendingImplementationEntity = new NewPendingImplementationV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let newPendingImplementationEntity = new NewPendingImplementationV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let newPendingImplementation = event.params.newPendingImplementation;
   let oldPendingImplementation = event.params.oldPendingImplementation;
 
@@ -37,13 +37,13 @@ export function handleNewPendingImplementation(
   newPendingImplementationEntity.save();
 }
 
-export function handleNewImplementation(event: NewImplementation): void {
+export function handleNewImplementationV1(event: NewImplementationV1): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let newImplementationEntity = new NewImplementationV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let newImplementationEntity = new NewImplementationV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let newImplementation = event.params.newImplementation;
   let oldPendingImplementation = event.params.oldImplementation;
 
@@ -57,13 +57,13 @@ export function handleNewImplementation(event: NewImplementation): void {
   newImplementationEntity.save();
 }
 
-export function handleNewPendingAdmin(event: NewPendingAdmin): void {
+export function handleNewPendingAdminV1(event: NewPendingAdminV1): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let newPendingAdminEntity = new NewPendingAdminV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let newPendingAdminEntity = new NewPendingAdminV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let newPendingAdmin = event.params.newPendingAdmin;
   let oldPendingAdmin = event.params.oldPendingAdmin;
 
@@ -77,13 +77,13 @@ export function handleNewPendingAdmin(event: NewPendingAdmin): void {
   newPendingAdminEntity.save();
 }
 
-export function handleNewAdmin(event: NewAdmin): void {
+export function handleNewAdminV1(event: NewAdminV1): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let newAdminEntity = new NewAdminV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let newAdminEntity = new NewAdminV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let newAdmin = event.params.newAdmin;
   let oldAdmin = event.params.oldAdmin;
 
@@ -97,13 +97,13 @@ export function handleNewAdmin(event: NewAdmin): void {
   newAdminEntity.save();  
 }
 
-export function handleFailure(event: Failure): void { 
+export function handleFailureV1(event: FailureV1): void { 
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let failureEntity = new FailureV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let failureEntity = new FailureV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let detail = event.params.detail;
   let error = event.params.error;
   let info = event.params.info;
@@ -119,13 +119,13 @@ export function handleFailure(event: Failure): void {
   failureEntity.save();
 }
 
-export function handleMarketListed(event: MarketListed): void {
+export function handleMarketListedV1(event: MarketListedV1): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let marketListedEntity = new MarketListedV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let marketListedEntity = new MarketListedV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let cToken = event.params.cToken;
 
   CTokenTemplate.create(cToken);
@@ -139,13 +139,13 @@ export function handleMarketListed(event: MarketListed): void {
   marketListedEntity.save();
 }
 
-export function handleAccrueInterest0(event: AccrueInterest0): void {
+export function handleAccrueInterestV1(event: AccrueInterestV1): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let handleAccrueInterest0Entity = new AccrueInterestV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let handleAccrueInterest0Entity = new AccrueInterestV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let borrowIndex = event.params.borrowIndex;
   let interestAccumulated = event.params.interestAccumulated;
   let totalBorrows = event.params.totalBorrows;
@@ -161,13 +161,13 @@ export function handleAccrueInterest0(event: AccrueInterest0): void {
   handleAccrueInterest0Entity.save();
 }
 
-export function handleAccrueInterest1(event: AccrueInterest1): void {
+export function handleAccrueInterestV2(event: AccrueInterestV2): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let handleAccrueInterest1Entity = new AccrueInterestV1Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let handleAccrueInterest1Entity = new AccrueInterestV2Event(`${transactionHash.toHexString()}-${logIndex}`);
   let borrowIndex = event.params.borrowIndex;
   let cashPrior = event.params.cashPrior;  
   let interestAccumulated = event.params.interestAccumulated;
@@ -185,13 +185,13 @@ export function handleAccrueInterest1(event: AccrueInterest1): void {
   handleAccrueInterest1Entity.save();
 }
 
-export function handleNewReserveFactor(event: NewReserveFactor): void {
+export function handleNewReserveFactorV1(event: NewReserveFactorV1): void {
   let transactionHash = event.transaction.hash;
   let contractAddress = event.address;
   let blockNumber = event.block.number;
   let blockTime = event.block.timestamp;
   let logIndex = event.logIndex;
-  let newReserveFactorEntity = new NewReserveFactorV0Event(`${transactionHash.toHexString()}-${logIndex}`);
+  let newReserveFactorEntity = new NewReserveFactorV1Event(`${transactionHash.toHexString()}-${logIndex}`);
   let newReserveFactorMantissa = event.params.newReserveFactorMantissa;
   let oldReserveFactorMantissa = event.params.oldReserveFactorMantissa;
 

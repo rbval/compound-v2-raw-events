@@ -1,4 +1,4 @@
-type NewPendingImplementationV0Event @entity {
+type NewPendingImplementationV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -9,7 +9,7 @@ type NewPendingImplementationV0Event @entity {
   oldPendingImplementation: Bytes!
 }
 
-type NewImplementationV0Event @entity {
+type NewImplementationV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -20,7 +20,7 @@ type NewImplementationV0Event @entity {
   oldImplementation: Bytes!
 }
 
-type NewPendingAdminV0Event @entity {
+type NewPendingAdminV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -31,7 +31,7 @@ type NewPendingAdminV0Event @entity {
   oldPendingAdmin: Bytes!
 }
 
-type NewAdminV0Event @entity {
+type NewAdminV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -42,7 +42,7 @@ type NewAdminV0Event @entity {
   oldAdmin: Bytes!
 }
 
-type FailureV0Event @entity {
+type FailureV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -54,7 +54,7 @@ type FailureV0Event @entity {
   info: BigInt!
 }
 
-type MarketListedV0Event @entity {
+type MarketListedV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -64,7 +64,7 @@ type MarketListedV0Event @entity {
   cToken: Bytes!
 }
 
-type AccrueInterestV0Event @entity {
+type AccrueInterestV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -76,7 +76,7 @@ type AccrueInterestV0Event @entity {
   totalBorrows: BigInt!
 }
 
-type AccrueInterestV1Event @entity {
+type AccrueInterestV2Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!
@@ -89,7 +89,7 @@ type AccrueInterestV1Event @entity {
   totalBorrows: BigInt!
 }
 
-type NewReserveFactorV0Event @entity {
+type NewReserveFactorV1Event @entity {
   id: ID!
   transactionHash: Bytes!
   contractAddress: Bytes!

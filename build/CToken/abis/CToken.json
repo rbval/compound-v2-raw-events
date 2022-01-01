@@ -2,7 +2,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "name",
+    "name": "nameV1",
     "outputs": [
       {
         "name": "",
@@ -25,7 +25,7 @@
         "type": "uint256"
       }
     ],
-    "name": "approve",
+    "name": "approveV1",
     "outputs": [
       {
         "name": "",
@@ -44,7 +44,7 @@
         "type": "uint256"
       }
     ],
-    "name": "repayBorrow",
+    "name": "repayBorrowV1",
     "outputs": [
       {
         "name": "",
@@ -58,7 +58,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "reserveFactorMantissa",
+    "name": "reserveFactorMantissaV1",
     "outputs": [
       {
         "name": "",
@@ -77,7 +77,7 @@
         "type": "address"
       }
     ],
-    "name": "borrowBalanceCurrent",
+    "name": "borrowBalanceCurrentV1",
     "outputs": [
       {
         "name": "",
@@ -91,7 +91,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "totalSupply",
+    "name": "totalSupplyV1",
     "outputs": [
       {
         "name": "",
@@ -105,7 +105,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "exchangeRateStored",
+    "name": "exchangeRateStoredV1",
     "outputs": [
       {
         "name": "",
@@ -132,7 +132,7 @@
         "type": "uint256"
       }
     ],
-    "name": "transferFrom",
+    "name": "transferFromV1",
     "outputs": [
       {
         "name": "",
@@ -155,7 +155,7 @@
         "type": "uint256"
       }
     ],
-    "name": "repayBorrowBehalf",
+    "name": "repayBorrowBehalfV1",
     "outputs": [
       {
         "name": "",
@@ -169,7 +169,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingAdmin",
+    "name": "pendingAdminV1",
     "outputs": [
       {
         "name": "",
@@ -183,7 +183,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "decimals",
+    "name": "decimalsV1",
     "outputs": [
       {
         "name": "",
@@ -202,7 +202,7 @@
         "type": "address"
       }
     ],
-    "name": "balanceOfUnderlying",
+    "name": "balanceOfUnderlyingV1",
     "outputs": [
       {
         "name": "",
@@ -216,7 +216,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "getCash",
+    "name": "getCashV1",
     "outputs": [
       {
         "name": "",
@@ -235,7 +235,7 @@
         "type": "address"
       }
     ],
-    "name": "_setComptroller",
+    "name": "_setComptrollerV1",
     "outputs": [
       {
         "name": "",
@@ -249,7 +249,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "totalBorrows",
+    "name": "totalBorrowsV1",
     "outputs": [
       {
         "name": "",
@@ -263,7 +263,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "comptroller",
+    "name": "comptrollerV1",
     "outputs": [
       {
         "name": "",
@@ -282,7 +282,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_reduceReserves",
+    "name": "_reduceReservesV1",
     "outputs": [
       {
         "name": "",
@@ -296,7 +296,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "initialExchangeRateMantissa",
+    "name": "initialExchangeRateMantissaV1",
     "outputs": [
       {
         "name": "",
@@ -310,7 +310,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "accrualBlockNumber",
+    "name": "accrualBlockNumberV1",
     "outputs": [
       {
         "name": "",
@@ -324,7 +324,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "underlying",
+    "name": "underlyingV1",
     "outputs": [
       {
         "name": "",
@@ -343,7 +343,7 @@
         "type": "address"
       }
     ],
-    "name": "balanceOf",
+    "name": "balanceOfV1",
     "outputs": [
       {
         "name": "",
@@ -357,7 +357,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "totalBorrowsCurrent",
+    "name": "totalBorrowsCurrentV1",
     "outputs": [
       {
         "name": "",
@@ -376,7 +376,7 @@
         "type": "uint256"
       }
     ],
-    "name": "redeemUnderlying",
+    "name": "redeemUnderlyingV1",
     "outputs": [
       {
         "name": "",
@@ -390,7 +390,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "totalReserves",
+    "name": "totalReservesV1",
     "outputs": [
       {
         "name": "",
@@ -404,7 +404,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "symbol",
+    "name": "symbolV1",
     "outputs": [
       {
         "name": "",
@@ -423,7 +423,7 @@
         "type": "address"
       }
     ],
-    "name": "borrowBalanceStored",
+    "name": "borrowBalanceStoredV1",
     "outputs": [
       {
         "name": "",
@@ -442,7 +442,7 @@
         "type": "uint256"
       }
     ],
-    "name": "mint",
+    "name": "mintV1",
     "outputs": [
       {
         "name": "",
@@ -456,7 +456,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "accrueInterest",
+    "name": "accrueInterestV1",
     "outputs": [
       {
         "name": "",
@@ -479,7 +479,7 @@
         "type": "uint256"
       }
     ],
-    "name": "transfer",
+    "name": "transferV1",
     "outputs": [
       {
         "name": "",
@@ -493,7 +493,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "borrowIndex",
+    "name": "borrowIndexV1",
     "outputs": [
       {
         "name": "",
@@ -507,7 +507,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "supplyRatePerBlock",
+    "name": "supplyRatePerBlockV1",
     "outputs": [
       {
         "name": "",
@@ -534,7 +534,7 @@
         "type": "uint256"
       }
     ],
-    "name": "seize",
+    "name": "seizeV1",
     "outputs": [
       {
         "name": "",
@@ -553,7 +553,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPendingAdmin",
+    "name": "_setPendingAdminV1",
     "outputs": [
       {
         "name": "",
@@ -567,7 +567,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "exchangeRateCurrent",
+    "name": "exchangeRateCurrentV1",
     "outputs": [
       {
         "name": "",
@@ -586,7 +586,7 @@
         "type": "address"
       }
     ],
-    "name": "getAccountSnapshot",
+    "name": "getAccountSnapshotV1",
     "outputs": [
       {
         "name": "",
@@ -617,7 +617,7 @@
         "type": "uint256"
       }
     ],
-    "name": "borrow",
+    "name": "borrowV1",
     "outputs": [
       {
         "name": "",
@@ -636,7 +636,7 @@
         "type": "uint256"
       }
     ],
-    "name": "redeem",
+    "name": "redeemV1",
     "outputs": [
       {
         "name": "",
@@ -659,7 +659,7 @@
         "type": "address"
       }
     ],
-    "name": "allowance",
+    "name": "allowanceV1",
     "outputs": [
       {
         "name": "",
@@ -673,7 +673,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "_acceptAdmin",
+    "name": "_acceptAdminV1",
     "outputs": [
       {
         "name": "",
@@ -692,7 +692,7 @@
         "type": "address"
       }
     ],
-    "name": "_setInterestRateModel",
+    "name": "_setInterestRateModelV1",
     "outputs": [
       {
         "name": "",
@@ -706,7 +706,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "interestRateModel",
+    "name": "interestRateModelV1",
     "outputs": [
       {
         "name": "",
@@ -733,7 +733,7 @@
         "type": "address"
       }
     ],
-    "name": "liquidateBorrow",
+    "name": "liquidateBorrowV1",
     "outputs": [
       {
         "name": "",
@@ -747,7 +747,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "admin",
+    "name": "adminV1",
     "outputs": [
       {
         "name": "",
@@ -761,7 +761,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "borrowRatePerBlock",
+    "name": "borrowRatePerBlockV1",
     "outputs": [
       {
         "name": "",
@@ -780,7 +780,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setReserveFactor",
+    "name": "_setReserveFactorV1",
     "outputs": [
       {
         "name": "",
@@ -794,7 +794,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "isCToken",
+    "name": "isCTokenV1",
     "outputs": [
       {
         "name": "",
@@ -838,7 +838,8 @@
     ],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "constructor"
+    "type": "constructor",
+    "name": "undefinedV1"
   },
   {
     "anonymous": false,
@@ -859,7 +860,7 @@
         "type": "uint256"
       }
     ],
-    "name": "AccrueInterest",
+    "name": "AccrueInterestV1",
     "type": "event"
   },
   {
@@ -886,7 +887,7 @@
         "type": "uint256"
       }
     ],
-    "name": "AccrueInterest",
+    "name": "AccrueInterestV2",
     "type": "event"
   },
   {
@@ -908,7 +909,7 @@
         "type": "uint256"
       }
     ],
-    "name": "Mint",
+    "name": "MintV1",
     "type": "event"
   },
   {
@@ -930,7 +931,7 @@
         "type": "uint256"
       }
     ],
-    "name": "Redeem",
+    "name": "RedeemV1",
     "type": "event"
   },
   {
@@ -957,7 +958,7 @@
         "type": "uint256"
       }
     ],
-    "name": "Borrow",
+    "name": "BorrowV1",
     "type": "event"
   },
   {
@@ -989,7 +990,7 @@
         "type": "uint256"
       }
     ],
-    "name": "RepayBorrow",
+    "name": "RepayBorrowV1",
     "type": "event"
   },
   {
@@ -1021,7 +1022,7 @@
         "type": "uint256"
       }
     ],
-    "name": "LiquidateBorrow",
+    "name": "LiquidateBorrowV1",
     "type": "event"
   },
   {
@@ -1038,7 +1039,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPendingAdmin",
+    "name": "NewPendingAdminV1",
     "type": "event"
   },
   {
@@ -1055,7 +1056,7 @@
         "type": "address"
       }
     ],
-    "name": "NewAdmin",
+    "name": "NewAdminV1",
     "type": "event"
   },
   {
@@ -1072,7 +1073,7 @@
         "type": "address"
       }
     ],
-    "name": "NewComptroller",
+    "name": "NewComptrollerV1",
     "type": "event"
   },
   {
@@ -1089,7 +1090,7 @@
         "type": "address"
       }
     ],
-    "name": "NewMarketInterestRateModel",
+    "name": "NewMarketInterestRateModelV1",
     "type": "event"
   },
   {
@@ -1106,7 +1107,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewReserveFactor",
+    "name": "NewReserveFactorV1",
     "type": "event"
   },
   {
@@ -1128,7 +1129,7 @@
         "type": "uint256"
       }
     ],
-    "name": "ReservesReduced",
+    "name": "ReservesReducedV1",
     "type": "event"
   },
   {
@@ -1150,7 +1151,7 @@
         "type": "uint256"
       }
     ],
-    "name": "Failure",
+    "name": "FailureV1",
     "type": "event"
   },
   {
@@ -1172,7 +1173,7 @@
         "type": "uint256"
       }
     ],
-    "name": "Transfer",
+    "name": "TransferV1",
     "type": "event"
   },
   {
@@ -1194,7 +1195,7 @@
         "type": "uint256"
       }
     ],
-    "name": "Approval",
+    "name": "ApprovalV1",
     "type": "event"
   }
 ]
