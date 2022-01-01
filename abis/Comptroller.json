@@ -868,8 +868,7 @@
     "inputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "constructor",
-    "name": "undefinedV1"
+    "type": "constructor"
   },
   {
     "anonymous": false,

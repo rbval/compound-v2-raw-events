@@ -838,8 +838,7 @@
     ],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "constructor",
-    "name": "undefinedV1"
+    "type": "constructor"
   },
   {
     "anonymous": false,
@@ -1226,8 +1225,7 @@
     ],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "constructor",
-    "name": "undefinedV2"
+    "type": "constructor"
   },
   {
     "anonymous": false,
@@ -1657,8 +1655,7 @@
   {
     "payable": true,
     "stateMutability": "payable",
-    "type": "fallback",
-    "name": "undefinedV3"
+    "type": "fallback"
   },
   {
     "constant": false,
@@ -2639,8 +2636,7 @@
     "inputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "constructor",
-    "name": "undefinedV4"
+    "type": "constructor"
   },
   {
     "constant": false,
