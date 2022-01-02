@@ -2,7 +2,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "isComptrollerV1",
+    "name": "isComptroller",
     "outputs": [
       {
         "name": "",
@@ -37,7 +37,7 @@
         "type": "uint256"
       }
     ],
-    "name": "repayBorrowVerifyV1",
+    "name": "repayBorrowVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -63,7 +63,7 @@
         "type": "uint256"
       }
     ],
-    "name": "repayBorrowAllowedV1",
+    "name": "repayBorrowAllowed",
     "outputs": [
       {
         "name": "",
@@ -77,7 +77,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingAdminV1",
+    "name": "pendingAdmin",
     "outputs": [
       {
         "name": "",
@@ -96,7 +96,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setCloseFactorV1",
+    "name": "_setCloseFactor",
     "outputs": [
       {
         "name": "",
@@ -131,7 +131,7 @@
         "type": "bool"
       }
     ],
-    "name": "_becomeV1",
+    "name": "_become",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -157,7 +157,7 @@
         "type": "uint256"
       }
     ],
-    "name": "mintVerifyV1",
+    "name": "mintVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -191,7 +191,7 @@
         "type": "uint256"
       }
     ],
-    "name": "liquidateBorrowVerifyV1",
+    "name": "liquidateBorrowVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -200,7 +200,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "liquidationIncentiveMantissaV1",
+    "name": "liquidationIncentiveMantissa",
     "outputs": [
       {
         "name": "",
@@ -227,7 +227,7 @@
         "type": "uint256"
       }
     ],
-    "name": "mintAllowedV1",
+    "name": "mintAllowed",
     "outputs": [
       {
         "name": "",
@@ -246,7 +246,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setLiquidationIncentiveV1",
+    "name": "_setLiquidationIncentive",
     "outputs": [
       {
         "name": "",
@@ -277,7 +277,7 @@
         "type": "uint256"
       }
     ],
-    "name": "redeemVerifyV1",
+    "name": "redeemVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -291,7 +291,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPriceOracleV1",
+    "name": "_setPriceOracle",
     "outputs": [
       {
         "name": "",
@@ -318,7 +318,7 @@
         "type": "uint256"
       }
     ],
-    "name": "borrowVerifyV1",
+    "name": "borrowVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -332,7 +332,7 @@
         "type": "address"
       }
     ],
-    "name": "getAccountLiquidityV1",
+    "name": "getAccountLiquidity",
     "outputs": [
       {
         "name": "",
@@ -375,7 +375,7 @@
         "type": "uint256"
       }
     ],
-    "name": "liquidateBorrowAllowedV1",
+    "name": "liquidateBorrowAllowed",
     "outputs": [
       {
         "name": "",
@@ -406,7 +406,7 @@
         "type": "uint256"
       }
     ],
-    "name": "transferVerifyV1",
+    "name": "transferVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -436,7 +436,7 @@
         "type": "uint256"
       }
     ],
-    "name": "seizeVerifyV1",
+    "name": "seizeVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -445,7 +445,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "oracleV1",
+    "name": "oracle",
     "outputs": [
       {
         "name": "",
@@ -464,7 +464,7 @@
         "type": "address"
       }
     ],
-    "name": "marketsV1",
+    "name": "markets",
     "outputs": [
       {
         "name": "isListed",
@@ -491,7 +491,7 @@
         "type": "address"
       }
     ],
-    "name": "checkMembershipV1",
+    "name": "checkMembership",
     "outputs": [
       {
         "name": "",
@@ -505,7 +505,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "maxAssetsV1",
+    "name": "maxAssets",
     "outputs": [
       {
         "name": "",
@@ -524,7 +524,7 @@
         "type": "address"
       }
     ],
-    "name": "_supportMarketV1",
+    "name": "_supportMarket",
     "outputs": [
       {
         "name": "",
@@ -543,7 +543,7 @@
         "type": "address"
       }
     ],
-    "name": "getAssetsInV1",
+    "name": "getAssetsIn",
     "outputs": [
       {
         "name": "",
@@ -557,7 +557,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "comptrollerImplementationV1",
+    "name": "comptrollerImplementation",
     "outputs": [
       {
         "name": "",
@@ -588,7 +588,7 @@
         "type": "uint256"
       }
     ],
-    "name": "transferAllowedV1",
+    "name": "transferAllowed",
     "outputs": [
       {
         "name": "",
@@ -607,7 +607,7 @@
         "type": "address[]"
       }
     ],
-    "name": "enterMarketsV1",
+    "name": "enterMarkets",
     "outputs": [
       {
         "name": "",
@@ -634,7 +634,7 @@
         "type": "uint256"
       }
     ],
-    "name": "liquidateCalculateSeizeTokensV1",
+    "name": "liquidateCalculateSeizeTokens",
     "outputs": [
       {
         "name": "",
@@ -673,7 +673,7 @@
         "type": "uint256"
       }
     ],
-    "name": "seizeAllowedV1",
+    "name": "seizeAllowed",
     "outputs": [
       {
         "name": "",
@@ -692,7 +692,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setMaxAssetsV1",
+    "name": "_setMaxAssets",
     "outputs": [
       {
         "name": "",
@@ -719,7 +719,7 @@
         "type": "uint256"
       }
     ],
-    "name": "borrowAllowedV1",
+    "name": "borrowAllowed",
     "outputs": [
       {
         "name": "",
@@ -742,7 +742,7 @@
         "type": "uint256"
       }
     ],
-    "name": "accountAssetsV1",
+    "name": "accountAssets",
     "outputs": [
       {
         "name": "",
@@ -756,7 +756,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingComptrollerImplementationV1",
+    "name": "pendingComptrollerImplementation",
     "outputs": [
       {
         "name": "",
@@ -779,7 +779,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setCollateralFactorV1",
+    "name": "_setCollateralFactor",
     "outputs": [
       {
         "name": "",
@@ -793,7 +793,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "closeFactorMantissaV1",
+    "name": "closeFactorMantissa",
     "outputs": [
       {
         "name": "",
@@ -820,7 +820,7 @@
         "type": "uint256"
       }
     ],
-    "name": "redeemAllowedV1",
+    "name": "redeemAllowed",
     "outputs": [
       {
         "name": "",
@@ -839,7 +839,7 @@
         "type": "address"
       }
     ],
-    "name": "exitMarketV1",
+    "name": "exitMarket",
     "outputs": [
       {
         "name": "",
@@ -853,7 +853,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "adminV1",
+    "name": "admin",
     "outputs": [
       {
         "name": "",
@@ -879,7 +879,7 @@
         "type": "address"
       }
     ],
-    "name": "MarketListedV1",
+    "name": "MarketListed",
     "type": "event"
   },
   {
@@ -896,7 +896,7 @@
         "type": "address"
       }
     ],
-    "name": "MarketEnteredV1",
+    "name": "MarketEntered",
     "type": "event"
   },
   {
@@ -913,7 +913,7 @@
         "type": "address"
       }
     ],
-    "name": "MarketExitedV1",
+    "name": "MarketExited",
     "type": "event"
   },
   {
@@ -930,7 +930,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewCloseFactorV1",
+    "name": "NewCloseFactor",
     "type": "event"
   },
   {
@@ -952,7 +952,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewCollateralFactorV1",
+    "name": "NewCollateralFactor",
     "type": "event"
   },
   {
@@ -969,7 +969,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewLiquidationIncentiveV1",
+    "name": "NewLiquidationIncentive",
     "type": "event"
   },
   {
@@ -986,7 +986,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewMaxAssetsV1",
+    "name": "NewMaxAssets",
     "type": "event"
   },
   {
@@ -1003,7 +1003,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPriceOracleV1",
+    "name": "NewPriceOracle",
     "type": "event"
   },
   {
@@ -1025,7 +1025,7 @@
         "type": "uint256"
       }
     ],
-    "name": "FailureV1",
+    "name": "Failure",
     "type": "event"
   },
   {
@@ -1036,7 +1036,7 @@
         "type": "address"
       }
     ],
-    "name": "_becomeV2",
+    "name": "_become",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -1045,7 +1045,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pauseGuardianV1",
+    "name": "pauseGuardian",
     "outputs": [
       {
         "name": "",
@@ -1064,7 +1064,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setSeizePausedV1",
+    "name": "_setSeizePaused",
     "outputs": [
       {
         "name": "",
@@ -1083,7 +1083,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setBorrowPausedV1",
+    "name": "_setBorrowPaused",
     "outputs": [
       {
         "name": "",
@@ -1097,7 +1097,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "mintGuardianPausedV1",
+    "name": "mintGuardianPaused",
     "outputs": [
       {
         "name": "",
@@ -1116,7 +1116,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPauseGuardianV1",
+    "name": "_setPauseGuardian",
     "outputs": [
       {
         "name": "",
@@ -1130,7 +1130,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "transferGuardianPausedV1",
+    "name": "transferGuardianPaused",
     "outputs": [
       {
         "name": "",
@@ -1149,7 +1149,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setTransferPausedV1",
+    "name": "_setTransferPaused",
     "outputs": [
       {
         "name": "",
@@ -1163,7 +1163,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "borrowGuardianPausedV1",
+    "name": "borrowGuardianPaused",
     "outputs": [
       {
         "name": "",
@@ -1182,7 +1182,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setMintPausedV1",
+    "name": "_setMintPaused",
     "outputs": [
       {
         "name": "",
@@ -1196,7 +1196,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "seizeGuardianPausedV1",
+    "name": "seizeGuardianPaused",
     "outputs": [
       {
         "name": "",
@@ -1221,7 +1221,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPauseGuardianV1",
+    "name": "NewPauseGuardian",
     "type": "event"
   },
   {
@@ -1238,7 +1238,7 @@
         "type": "bool"
       }
     ],
-    "name": "ActionPausedV1",
+    "name": "ActionPaused",
     "type": "event"
   },
   {
@@ -1257,7 +1257,7 @@
         "type": "bool"
       }
     ],
-    "name": "ActionPausedV2",
+    "name": "ActionPaused",
     "type": "event"
   },
   {
@@ -1282,7 +1282,7 @@
         "type": "bool"
       }
     ],
-    "name": "ActionPausedV3",
+    "name": "ActionPaused",
     "type": "event"
   },
   {
@@ -1307,7 +1307,7 @@
         "type": "uint256"
       }
     ],
-    "name": "FailureV2",
+    "name": "Failure",
     "type": "event"
   },
   {
@@ -1326,7 +1326,7 @@
         "type": "address"
       }
     ],
-    "name": "MarketEnteredV2",
+    "name": "MarketEntered",
     "type": "event"
   },
   {
@@ -1345,7 +1345,7 @@
         "type": "address"
       }
     ],
-    "name": "MarketExitedV2",
+    "name": "MarketExited",
     "type": "event"
   },
   {
@@ -1358,7 +1358,7 @@
         "type": "address"
       }
     ],
-    "name": "MarketListedV2",
+    "name": "MarketListed",
     "type": "event"
   },
   {
@@ -1377,7 +1377,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewCloseFactorV2",
+    "name": "NewCloseFactor",
     "type": "event"
   },
   {
@@ -1402,7 +1402,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewCollateralFactorV2",
+    "name": "NewCollateralFactor",
     "type": "event"
   },
   {
@@ -1421,7 +1421,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewLiquidationIncentiveV2",
+    "name": "NewLiquidationIncentive",
     "type": "event"
   },
   {
@@ -1440,7 +1440,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewMaxAssetsV2",
+    "name": "NewMaxAssets",
     "type": "event"
   },
   {
@@ -1459,7 +1459,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPauseGuardianV2",
+    "name": "NewPauseGuardian",
     "type": "event"
   },
   {
@@ -1478,7 +1478,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPriceOracleV2",
+    "name": "NewPriceOracle",
     "type": "event"
   },
   {
@@ -1490,7 +1490,7 @@
         "type": "address"
       }
     ],
-    "name": "_becomeV3",
+    "name": "_become",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -1499,7 +1499,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "_borrowGuardianPausedV1",
+    "name": "_borrowGuardianPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1514,7 +1514,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "_mintGuardianPausedV1",
+    "name": "_mintGuardianPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1540,7 +1540,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setBorrowPausedV2",
+    "name": "_setBorrowPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1561,7 +1561,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setCloseFactorV2",
+    "name": "_setCloseFactor",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1587,7 +1587,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setCollateralFactorV2",
+    "name": "_setCollateralFactor",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1608,7 +1608,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setLiquidationIncentiveV2",
+    "name": "_setLiquidationIncentive",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1629,7 +1629,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setMaxAssetsV2",
+    "name": "_setMaxAssets",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1655,7 +1655,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setMintPausedV2",
+    "name": "_setMintPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1676,7 +1676,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPauseGuardianV2",
+    "name": "_setPauseGuardian",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1697,7 +1697,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPriceOracleV2",
+    "name": "_setPriceOracle",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1718,7 +1718,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setSeizePausedV2",
+    "name": "_setSeizePaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1739,7 +1739,7 @@
         "type": "bool"
       }
     ],
-    "name": "_setTransferPausedV2",
+    "name": "_setTransferPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1760,7 +1760,7 @@
         "type": "address"
       }
     ],
-    "name": "_supportMarketV2",
+    "name": "_supportMarket",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1786,7 +1786,7 @@
         "type": "uint256"
       }
     ],
-    "name": "accountAssetsV2",
+    "name": "accountAssets",
     "outputs": [
       {
         "internalType": "contract CToken",
@@ -1801,7 +1801,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "adminV2",
+    "name": "admin",
     "outputs": [
       {
         "internalType": "address",
@@ -1832,7 +1832,7 @@
         "type": "uint256"
       }
     ],
-    "name": "borrowAllowedV2",
+    "name": "borrowAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1853,7 +1853,7 @@
         "type": "address"
       }
     ],
-    "name": "borrowGuardianPausedV2",
+    "name": "borrowGuardianPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -1884,7 +1884,7 @@
         "type": "uint256"
       }
     ],
-    "name": "borrowVerifyV2",
+    "name": "borrowVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -1904,7 +1904,7 @@
         "type": "address"
       }
     ],
-    "name": "checkMembershipV2",
+    "name": "checkMembership",
     "outputs": [
       {
         "internalType": "bool",
@@ -1919,7 +1919,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "closeFactorMantissaV2",
+    "name": "closeFactorMantissa",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1934,7 +1934,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "comptrollerImplementationV2",
+    "name": "comptrollerImplementation",
     "outputs": [
       {
         "internalType": "address",
@@ -1955,7 +1955,7 @@
         "type": "address[]"
       }
     ],
-    "name": "enterMarketsV2",
+    "name": "enterMarkets",
     "outputs": [
       {
         "internalType": "uint256[]",
@@ -1976,7 +1976,7 @@
         "type": "address"
       }
     ],
-    "name": "exitMarketV2",
+    "name": "exitMarket",
     "outputs": [
       {
         "internalType": "uint256",
@@ -1997,7 +1997,7 @@
         "type": "address"
       }
     ],
-    "name": "getAccountLiquidityV2",
+    "name": "getAccountLiquidity",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2028,7 +2028,7 @@
         "type": "address"
       }
     ],
-    "name": "getAssetsInV2",
+    "name": "getAssetsIn",
     "outputs": [
       {
         "internalType": "contract CToken[]",
@@ -2043,7 +2043,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "isComptrollerV2",
+    "name": "isComptroller",
     "outputs": [
       {
         "internalType": "bool",
@@ -2084,7 +2084,7 @@
         "type": "uint256"
       }
     ],
-    "name": "liquidateBorrowAllowedV2",
+    "name": "liquidateBorrowAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2130,7 +2130,7 @@
         "type": "uint256"
       }
     ],
-    "name": "liquidateBorrowVerifyV2",
+    "name": "liquidateBorrowVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2155,7 +2155,7 @@
         "type": "uint256"
       }
     ],
-    "name": "liquidateCalculateSeizeTokensV2",
+    "name": "liquidateCalculateSeizeTokens",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2175,7 +2175,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "liquidationIncentiveMantissaV2",
+    "name": "liquidationIncentiveMantissa",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2196,7 +2196,7 @@
         "type": "address"
       }
     ],
-    "name": "marketsV2",
+    "name": "markets",
     "outputs": [
       {
         "internalType": "bool",
@@ -2216,7 +2216,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "maxAssetsV2",
+    "name": "maxAssets",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2247,7 +2247,7 @@
         "type": "uint256"
       }
     ],
-    "name": "mintAllowedV2",
+    "name": "mintAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2268,7 +2268,7 @@
         "type": "address"
       }
     ],
-    "name": "mintGuardianPausedV2",
+    "name": "mintGuardianPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -2304,7 +2304,7 @@
         "type": "uint256"
       }
     ],
-    "name": "mintVerifyV2",
+    "name": "mintVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2313,7 +2313,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "oracleV2",
+    "name": "oracle",
     "outputs": [
       {
         "internalType": "contract PriceOracle",
@@ -2328,7 +2328,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pauseGuardianV2",
+    "name": "pauseGuardian",
     "outputs": [
       {
         "internalType": "address",
@@ -2343,7 +2343,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingAdminV2",
+    "name": "pendingAdmin",
     "outputs": [
       {
         "internalType": "address",
@@ -2358,7 +2358,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingComptrollerImplementationV2",
+    "name": "pendingComptrollerImplementation",
     "outputs": [
       {
         "internalType": "address",
@@ -2389,7 +2389,7 @@
         "type": "uint256"
       }
     ],
-    "name": "redeemAllowedV2",
+    "name": "redeemAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2425,7 +2425,7 @@
         "type": "uint256"
       }
     ],
-    "name": "redeemVerifyV2",
+    "name": "redeemVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2455,7 +2455,7 @@
         "type": "uint256"
       }
     ],
-    "name": "repayBorrowAllowedV2",
+    "name": "repayBorrowAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2496,7 +2496,7 @@
         "type": "uint256"
       }
     ],
-    "name": "repayBorrowVerifyV2",
+    "name": "repayBorrowVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2531,7 +2531,7 @@
         "type": "uint256"
       }
     ],
-    "name": "seizeAllowedV2",
+    "name": "seizeAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2546,7 +2546,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "seizeGuardianPausedV2",
+    "name": "seizeGuardianPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -2587,7 +2587,7 @@
         "type": "uint256"
       }
     ],
-    "name": "seizeVerifyV2",
+    "name": "seizeVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2617,7 +2617,7 @@
         "type": "uint256"
       }
     ],
-    "name": "transferAllowedV2",
+    "name": "transferAllowed",
     "outputs": [
       {
         "internalType": "uint256",
@@ -2632,7 +2632,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "transferGuardianPausedV2",
+    "name": "transferGuardianPaused",
     "outputs": [
       {
         "internalType": "bool",
@@ -2668,7 +2668,7 @@
         "type": "uint256"
       }
     ],
-    "name": "transferVerifyV2",
+    "name": "transferVerify",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2690,7 +2690,7 @@
         "type": "uint256"
       }
     ],
-    "name": "CompSpeedUpdatedV1",
+    "name": "CompSpeedUpdated",
     "type": "event"
   },
   {
@@ -2721,7 +2721,7 @@
         "type": "uint256"
       }
     ],
-    "name": "DistributedBorrowerCompV1",
+    "name": "DistributedBorrowerComp",
     "type": "event"
   },
   {
@@ -2752,7 +2752,7 @@
         "type": "uint256"
       }
     ],
-    "name": "DistributedSupplierCompV1",
+    "name": "DistributedSupplierComp",
     "type": "event"
   },
   {
@@ -2771,7 +2771,7 @@
         "type": "bool"
       }
     ],
-    "name": "MarketCompedV1",
+    "name": "MarketComped",
     "type": "event"
   },
   {
@@ -2790,7 +2790,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewCompRateV1",
+    "name": "NewCompRate",
     "type": "event"
   },
   {
@@ -2802,7 +2802,7 @@
         "type": "address[]"
       }
     ],
-    "name": "_addCompMarketsV1",
+    "name": "_addCompMarkets",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2832,7 +2832,7 @@
         "type": "address[]"
       }
     ],
-    "name": "_becomeV4",
+    "name": "_become",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2857,7 +2857,7 @@
         "type": "address[]"
       }
     ],
-    "name": "_becomeG3V1",
+    "name": "_becomeG3",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2872,7 +2872,7 @@
         "type": "address"
       }
     ],
-    "name": "_dropCompMarketV1",
+    "name": "_dropCompMarket",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2887,7 +2887,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setCompRateV1",
+    "name": "_setCompRate",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2902,7 +2902,7 @@
         "type": "uint256"
       }
     ],
-    "name": "allMarketsV1",
+    "name": "allMarkets",
     "outputs": [
       {
         "internalType": "contract CToken",
@@ -2928,7 +2928,7 @@
         "type": "address[]"
       }
     ],
-    "name": "claimCompV1",
+    "name": "claimComp",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2958,7 +2958,7 @@
         "type": "bool"
       }
     ],
-    "name": "claimCompV2",
+    "name": "claimComp",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2973,7 +2973,7 @@
         "type": "address"
       }
     ],
-    "name": "claimCompV3",
+    "name": "claimComp",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -2988,7 +2988,7 @@
         "type": "address"
       }
     ],
-    "name": "compAccruedV1",
+    "name": "compAccrued",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3009,7 +3009,7 @@
         "type": "address"
       }
     ],
-    "name": "compBorrowStateV1",
+    "name": "compBorrowState",
     "outputs": [
       {
         "internalType": "uint224",
@@ -3040,7 +3040,7 @@
         "type": "address"
       }
     ],
-    "name": "compBorrowerIndexV1",
+    "name": "compBorrowerIndex",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3055,7 +3055,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "compClaimThresholdV1",
+    "name": "compClaimThreshold",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3070,7 +3070,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "compInitialIndexV1",
+    "name": "compInitialIndex",
     "outputs": [
       {
         "internalType": "uint224",
@@ -3085,7 +3085,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "compRateV1",
+    "name": "compRate",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3106,7 +3106,7 @@
         "type": "address"
       }
     ],
-    "name": "compSpeedsV1",
+    "name": "compSpeeds",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3132,7 +3132,7 @@
         "type": "address"
       }
     ],
-    "name": "compSupplierIndexV1",
+    "name": "compSupplierIndex",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3153,7 +3153,7 @@
         "type": "address"
       }
     ],
-    "name": "compSupplyStateV1",
+    "name": "compSupplyState",
     "outputs": [
       {
         "internalType": "uint224",
@@ -3173,7 +3173,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "getAllMarketsV1",
+    "name": "getAllMarkets",
     "outputs": [
       {
         "internalType": "contract CToken[]",
@@ -3188,7 +3188,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "getBlockNumberV1",
+    "name": "getBlockNumber",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3203,7 +3203,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "getCompAddressV1",
+    "name": "getCompAddress",
     "outputs": [
       {
         "internalType": "address",
@@ -3239,7 +3239,7 @@
         "type": "uint256"
       }
     ],
-    "name": "getHypotheticalAccountLiquidityV1",
+    "name": "getHypotheticalAccountLiquidity",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3270,7 +3270,7 @@
         "type": "address"
       }
     ],
-    "name": "marketsV3",
+    "name": "markets",
     "outputs": [
       {
         "internalType": "bool",
@@ -3295,7 +3295,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "refreshCompSpeedsV1",
+    "name": "refreshCompSpeeds",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3317,7 +3317,7 @@
         "type": "uint256"
       }
     ],
-    "name": "NewBorrowCapV1",
+    "name": "NewBorrowCap",
     "type": "event"
   },
   {
@@ -3336,7 +3336,7 @@
         "type": "address"
       }
     ],
-    "name": "NewBorrowCapGuardianV1",
+    "name": "NewBorrowCapGuardian",
     "type": "event"
   },
   {
@@ -3348,7 +3348,7 @@
         "type": "address"
       }
     ],
-    "name": "_setBorrowCapGuardianV1",
+    "name": "_setBorrowCapGuardian",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3368,7 +3368,7 @@
         "type": "uint256[]"
       }
     ],
-    "name": "_setMarketBorrowCapsV1",
+    "name": "_setMarketBorrowCaps",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3377,7 +3377,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "borrowCapGuardianV1",
+    "name": "borrowCapGuardian",
     "outputs": [
       {
         "internalType": "address",
@@ -3398,7 +3398,7 @@
         "type": "address"
       }
     ],
-    "name": "borrowCapsV1",
+    "name": "borrowCaps",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3426,7 +3426,7 @@
         "type": "uint256"
       }
     ],
-    "name": "CompGrantedV1",
+    "name": "CompGranted",
     "type": "event"
   },
   {
@@ -3445,7 +3445,7 @@
         "type": "uint256"
       }
     ],
-    "name": "ContributorCompSpeedUpdatedV1",
+    "name": "ContributorCompSpeedUpdated",
     "type": "event"
   },
   {
@@ -3462,7 +3462,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_grantCompV1",
+    "name": "_grantComp",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3482,7 +3482,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setContributorCompSpeedV1",
+    "name": "_setContributorCompSpeed",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3497,7 +3497,7 @@
         "type": "address"
       }
     ],
-    "name": "compContributorSpeedsV1",
+    "name": "compContributorSpeeds",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3518,7 +3518,7 @@
         "type": "address"
       }
     ],
-    "name": "lastContributorBlockV1",
+    "name": "lastContributorBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3539,7 +3539,7 @@
         "type": "address"
       }
     ],
-    "name": "updateContributorRewardsV1",
+    "name": "updateContributorRewards",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3559,7 +3559,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_setCompSpeedV1",
+    "name": "_setCompSpeed",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3574,7 +3574,7 @@
         "type": "address"
       }
     ],
-    "name": "isDeprecatedV1",
+    "name": "isDeprecated",
     "outputs": [
       {
         "internalType": "bool",
@@ -3602,7 +3602,7 @@
         "type": "uint256"
       }
     ],
-    "name": "CompBorrowSpeedUpdatedV1",
+    "name": "CompBorrowSpeedUpdated",
     "type": "event"
   },
   {
@@ -3621,7 +3621,7 @@
         "type": "uint256"
       }
     ],
-    "name": "CompSupplySpeedUpdatedV1",
+    "name": "CompSupplySpeedUpdated",
     "type": "event"
   },
   {
@@ -3643,7 +3643,7 @@
         "type": "uint256[]"
       }
     ],
-    "name": "_setCompSpeedsV1",
+    "name": "_setCompSpeeds",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3652,7 +3652,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "_upgradeSplitCompRewardsV1",
+    "name": "_upgradeSplitCompRewards",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3667,7 +3667,7 @@
         "type": "address"
       }
     ],
-    "name": "compBorrowSpeedsV1",
+    "name": "compBorrowSpeeds",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3688,7 +3688,7 @@
         "type": "address"
       }
     ],
-    "name": "compSupplySpeedsV1",
+    "name": "compSupplySpeeds",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3722,7 +3722,7 @@
         "type": "uint256"
       }
     ],
-    "name": "CompAccruedAdjustedV1",
+    "name": "CompAccruedAdjusted",
     "type": "event"
   },
   {
@@ -3747,7 +3747,7 @@
         "type": "uint256"
       }
     ],
-    "name": "CompReceivableUpdatedV1",
+    "name": "CompReceivableUpdated",
     "type": "event"
   },
   {
@@ -3759,7 +3759,7 @@
         "type": "address"
       }
     ],
-    "name": "compReceivableV1",
+    "name": "compReceivable",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3785,7 +3785,7 @@
         "type": "uint256[]"
       }
     ],
-    "name": "fixBadAccrualsV1",
+    "name": "fixBadAccruals",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -3794,7 +3794,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "proposal65FixExecutedV1",
+    "name": "proposal65FixExecuted",
     "outputs": [
       {
         "internalType": "bool",

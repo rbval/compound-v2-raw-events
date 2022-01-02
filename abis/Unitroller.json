@@ -2,7 +2,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingAdminV1",
+    "name": "pendingAdmin",
     "outputs": [
       {
         "name": "",
@@ -21,7 +21,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPendingAdminV1",
+    "name": "_setPendingAdmin",
     "outputs": [
       {
         "name": "",
@@ -35,7 +35,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "comptrollerImplementationV1",
+    "name": "comptrollerImplementation",
     "outputs": [
       {
         "name": "",
@@ -49,7 +49,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "_acceptImplementationV1",
+    "name": "_acceptImplementation",
     "outputs": [
       {
         "name": "",
@@ -63,7 +63,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "pendingComptrollerImplementationV1",
+    "name": "pendingComptrollerImplementation",
     "outputs": [
       {
         "name": "",
@@ -82,7 +82,7 @@
         "type": "address"
       }
     ],
-    "name": "_setPendingImplementationV1",
+    "name": "_setPendingImplementation",
     "outputs": [
       {
         "name": "",
@@ -96,7 +96,7 @@
   {
     "constant": false,
     "inputs": [],
-    "name": "_acceptAdminV1",
+    "name": "_acceptAdmin",
     "outputs": [
       {
         "name": "",
@@ -110,7 +110,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "adminV1",
+    "name": "admin",
     "outputs": [
       {
         "name": "",
@@ -126,13 +126,13 @@
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "constructor",
-    "name": "undefinedV1"
+    "name": "undefined"
   },
   {
     "payable": true,
     "stateMutability": "payable",
     "type": "fallback",
-    "name": "undefinedV2"
+    "name": "undefined"
   },
   {
     "anonymous": false,
@@ -148,7 +148,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPendingImplementationV1",
+    "name": "NewPendingImplementation",
     "type": "event"
   },
   {
@@ -165,7 +165,7 @@
         "type": "address"
       }
     ],
-    "name": "NewImplementationV1",
+    "name": "NewImplementation",
     "type": "event"
   },
   {
@@ -182,7 +182,7 @@
         "type": "address"
       }
     ],
-    "name": "NewPendingAdminV1",
+    "name": "NewPendingAdmin",
     "type": "event"
   },
   {
@@ -199,7 +199,7 @@
         "type": "address"
       }
     ],
-    "name": "NewAdminV1",
+    "name": "NewAdmin",
     "type": "event"
   },
   {
@@ -221,7 +221,7 @@
         "type": "uint256"
       }
     ],
-    "name": "FailureV1",
+    "name": "Failure",
     "type": "event"
   }
 ]

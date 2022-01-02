@@ -1,9 +1,9 @@
 type NewPendingImplementationV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   newPendingImplementation: Bytes!
   oldPendingImplementation: Bytes!
@@ -12,9 +12,9 @@ type NewPendingImplementationV1Event @entity {
 type NewImplementationV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   newImplementation: Bytes!
   oldImplementation: Bytes!
@@ -23,9 +23,9 @@ type NewImplementationV1Event @entity {
 type NewPendingAdminV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   newPendingAdmin: Bytes!
   oldPendingAdmin: Bytes!
@@ -34,9 +34,9 @@ type NewPendingAdminV1Event @entity {
 type NewAdminV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   newAdmin: Bytes!
   oldAdmin: Bytes!
@@ -45,9 +45,9 @@ type NewAdminV1Event @entity {
 type FailureV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   detail: BigInt!
   error: BigInt!
@@ -57,9 +57,9 @@ type FailureV1Event @entity {
 type MarketListedV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   cToken: Bytes!
 }
@@ -67,9 +67,9 @@ type MarketListedV1Event @entity {
 type AccrueInterestV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   borrowIndex: BigInt!
   interestAccumulated: BigInt!
@@ -79,9 +79,9 @@ type AccrueInterestV1Event @entity {
 type AccrueInterestV2Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   borrowIndex: BigInt!
   cashPrior: BigInt!
@@ -92,10 +92,22 @@ type AccrueInterestV2Event @entity {
 type NewReserveFactorV1Event @entity {
   id: ID!
   transactionHash: Bytes!
-  contractAddress: Bytes!
+  address: Bytes!
   blockNumber: BigInt!
-  blockTime: BigInt!
+  blockTimestamp: BigInt!
   logIndex: BigInt!
   newReserveFactorMantissa: BigInt!
   oldReserveFactorMantissa: BigInt!
+}
+
+type BorrowV1Call @entity {
+  id: ID!
+  transactionHash: Bytes!
+  address: Bytes!
+  from: Bytes!
+  to: Bytes!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  borrowAmount: BigInt!
+  value0: BigInt!
 }

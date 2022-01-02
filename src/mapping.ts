@@ -1,206 +1,144 @@
 import { CToken as CTokenTemplate } from '../generated/templates'
 import {
-  NewPendingImplementationV1,
-  NewImplementationV1,
-  NewPendingAdminV1,
-  NewAdminV1,
-  FailureV1
+  NewPendingImplementation as NewPendingImplementationEventV1,
+  NewImplementation as NewImplementationEventV1,
+  NewPendingAdmin as NewPendingAdminEventV1,
+  NewAdmin as NewAdminEventV1,
+  Failure as FailureEventV1
 } from "../generated/Unitroller/Unitroller"
 import {
-  AccrueInterestV1,
-  AccrueInterestV2,
-  NewReserveFactorV1,
+  AccrueInterest as AccrueInterestEventV1,
+  AccrueInterest1 as AccrueInterestEventV2,
+  NewReserveFactor as NewReserveFactorEventV1,
+  BorrowCall as BorrowCallV1
 } from '../generated/templates/CToken/CToken'
-import { MarketListedV1 } from "../generated/Comptroller/Comptroller";
+import { MarketListed as MarketListedEventV1 } from "../generated/Comptroller/Comptroller";
 
-import { NewPendingImplementationV1Event, NewImplementationV1Event, NewPendingAdminV1Event, NewAdminV1Event, FailureV1Event, MarketListedV1Event, AccrueInterestV1Event, AccrueInterestV2Event, NewReserveFactorV1Event } from "../generated/schema"
+import { NewPendingImplementationV1Event, NewImplementationV1Event, NewPendingAdminV1Event, NewAdminV1Event, FailureV1Event, MarketListedV1Event, AccrueInterestV1Event, AccrueInterestV2Event, NewReserveFactorV1Event, BorrowV1Call } from "../generated/schema"
 
-export function handleNewPendingImplementationV1(
-  event: NewPendingImplementationV1
+export function handleNewPendingImplementationV1Event(
+  event: NewPendingImplementationEventV1
 ): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let newPendingImplementationEntity = new NewPendingImplementationV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let newPendingImplementation = event.params.newPendingImplementation;
-  let oldPendingImplementation = event.params.oldPendingImplementation;
-
-  newPendingImplementationEntity.transactionHash = transactionHash;
-  newPendingImplementationEntity.contractAddress = contractAddress;
-  newPendingImplementationEntity.blockNumber = blockNumber;
-  newPendingImplementationEntity.blockTime = blockTime;
-  newPendingImplementationEntity.logIndex = logIndex;
-  newPendingImplementationEntity.newPendingImplementation = newPendingImplementation;
-  newPendingImplementationEntity.oldPendingImplementation = oldPendingImplementation;
-  newPendingImplementationEntity.save();
+  let entity = new NewPendingImplementationV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;    
+  entity.newPendingImplementation = event.params.newPendingImplementation;
+  entity.oldPendingImplementation = event.params.oldPendingImplementation;
+  entity.save();
 }
 
-export function handleNewImplementationV1(event: NewImplementationV1): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let newImplementationEntity = new NewImplementationV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let newImplementation = event.params.newImplementation;
-  let oldPendingImplementation = event.params.oldImplementation;
-
-  newImplementationEntity.transactionHash = transactionHash;
-  newImplementationEntity.contractAddress = contractAddress;
-  newImplementationEntity.blockNumber = blockNumber;
-  newImplementationEntity.blockTime = blockTime;
-  newImplementationEntity.logIndex = logIndex;
-  newImplementationEntity.newImplementation = newImplementation;
-  newImplementationEntity.oldImplementation = oldPendingImplementation;
-  newImplementationEntity.save();
+export function handleNewImplementationV1Event(event: NewImplementationEventV1): void {
+  let entity = new NewImplementationV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;  
+  entity.newImplementation = event.params.newImplementation;
+  entity.oldImplementation = event.params.oldImplementation;
+  entity.save();
 }
 
-export function handleNewPendingAdminV1(event: NewPendingAdminV1): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let newPendingAdminEntity = new NewPendingAdminV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let newPendingAdmin = event.params.newPendingAdmin;
-  let oldPendingAdmin = event.params.oldPendingAdmin;
-
-  newPendingAdminEntity.transactionHash = transactionHash;
-  newPendingAdminEntity.contractAddress = contractAddress;
-  newPendingAdminEntity.blockNumber = blockNumber;
-  newPendingAdminEntity.blockTime = blockTime;
-  newPendingAdminEntity.logIndex = logIndex;
-  newPendingAdminEntity.newPendingAdmin = newPendingAdmin;
-  newPendingAdminEntity.oldPendingAdmin = oldPendingAdmin;
-  newPendingAdminEntity.save();
+export function handleNewPendingAdminV1Event(event: NewPendingAdminEventV1): void {
+  let entity = new NewPendingAdminV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;  
+  entity.newPendingAdmin = event.params.newPendingAdmin;
+  entity.oldPendingAdmin = event.params.oldPendingAdmin;
+  entity.save();
 }
 
-export function handleNewAdminV1(event: NewAdminV1): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let newAdminEntity = new NewAdminV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let newAdmin = event.params.newAdmin;
-  let oldAdmin = event.params.oldAdmin;
-
-  newAdminEntity.transactionHash = transactionHash;
-  newAdminEntity.contractAddress = contractAddress;
-  newAdminEntity.blockNumber = blockNumber;
-  newAdminEntity.blockTime = blockTime;
-  newAdminEntity.logIndex = logIndex;
-  newAdminEntity.newAdmin = newAdmin;
-  newAdminEntity.oldAdmin = oldAdmin;
-  newAdminEntity.save();  
+export function handleNewAdminV1Event(event: NewAdminEventV1): void {
+  let entity = new NewAdminV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;  
+  entity.newAdmin = event.params.newAdmin;
+  entity.oldAdmin = event.params.oldAdmin;
+  entity.save();  
 }
 
-export function handleFailureV1(event: FailureV1): void { 
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let failureEntity = new FailureV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let detail = event.params.detail;
-  let error = event.params.error;
-  let info = event.params.info;
-
-  failureEntity.transactionHash = transactionHash;
-  failureEntity.contractAddress = contractAddress;
-  failureEntity.blockNumber = blockNumber;
-  failureEntity.blockTime = blockTime;
-  failureEntity.logIndex = logIndex;
-  failureEntity.detail = detail;
-  failureEntity.error = error;
-  failureEntity.info = info;
-  failureEntity.save();
+export function handleFailureV1Event(event: FailureEventV1): void { 
+  let entity = new FailureV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;
+  entity.detail = event.params.detail;
+  entity.error = event.params.error;
+  entity.info = event.params.info;
+  entity.save();
 }
 
-export function handleMarketListedV1(event: MarketListedV1): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let marketListedEntity = new MarketListedV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let cToken = event.params.cToken;
-
-  CTokenTemplate.create(cToken);
-
-  marketListedEntity.transactionHash = transactionHash;
-  marketListedEntity.contractAddress = contractAddress;
-  marketListedEntity.blockNumber = blockNumber;
-  marketListedEntity.blockTime = blockTime;
-  marketListedEntity.logIndex = logIndex;
-  marketListedEntity.cToken = cToken;
-  marketListedEntity.save();
+export function handleMarketListedV1Event(event: MarketListedEventV1): void {
+  let entity = new MarketListedV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  CTokenTemplate.create(event.params.cToken);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;
+  entity.cToken = event.params.cToken;
+  entity.save();
 }
 
-export function handleAccrueInterestV1(event: AccrueInterestV1): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let handleAccrueInterest0Entity = new AccrueInterestV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let borrowIndex = event.params.borrowIndex;
-  let interestAccumulated = event.params.interestAccumulated;
-  let totalBorrows = event.params.totalBorrows;
-
-  handleAccrueInterest0Entity.transactionHash = transactionHash;
-  handleAccrueInterest0Entity.contractAddress = contractAddress;
-  handleAccrueInterest0Entity.blockNumber = blockNumber;
-  handleAccrueInterest0Entity.blockTime = blockTime;
-  handleAccrueInterest0Entity.logIndex = logIndex;
-  handleAccrueInterest0Entity.borrowIndex = borrowIndex;
-  handleAccrueInterest0Entity.interestAccumulated = interestAccumulated;
-  handleAccrueInterest0Entity.totalBorrows = totalBorrows;
-  handleAccrueInterest0Entity.save();
+export function handleAccrueInterestV1Event(event: AccrueInterestEventV1): void {
+  let entity = new AccrueInterestV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;
+  entity.borrowIndex = event.params.borrowIndex;
+  entity.interestAccumulated = event.params.interestAccumulated;
+  entity.totalBorrows = event.params.totalBorrows;
+  entity.save();
 }
 
-export function handleAccrueInterestV2(event: AccrueInterestV2): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let handleAccrueInterest1Entity = new AccrueInterestV2Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let borrowIndex = event.params.borrowIndex;
-  let cashPrior = event.params.cashPrior;  
-  let interestAccumulated = event.params.interestAccumulated;
-  let totalBorrows = event.params.totalBorrows;
-
-  handleAccrueInterest1Entity.transactionHash = transactionHash;
-  handleAccrueInterest1Entity.contractAddress = contractAddress;
-  handleAccrueInterest1Entity.blockNumber = blockNumber;
-  handleAccrueInterest1Entity.blockTime = blockTime;
-  handleAccrueInterest1Entity.logIndex = logIndex;
-  handleAccrueInterest1Entity.borrowIndex = borrowIndex;
-  handleAccrueInterest1Entity.cashPrior = cashPrior;
-  handleAccrueInterest1Entity.interestAccumulated = interestAccumulated;
-  handleAccrueInterest1Entity.totalBorrows = totalBorrows;
-  handleAccrueInterest1Entity.save();
+export function handleAccrueInterestV2Event(event: AccrueInterestEventV2): void {
+  let entity = new AccrueInterestV2Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;
+  entity.borrowIndex = event.params.borrowIndex;
+  entity.cashPrior = event.params.cashPrior;
+  entity.interestAccumulated = event.params.interestAccumulated;
+  entity.totalBorrows = event.params.totalBorrows;
+  entity.save();
 }
 
-export function handleNewReserveFactorV1(event: NewReserveFactorV1): void {
-  let transactionHash = event.transaction.hash;
-  let contractAddress = event.address;
-  let blockNumber = event.block.number;
-  let blockTime = event.block.timestamp;
-  let logIndex = event.logIndex;
-  let newReserveFactorEntity = new NewReserveFactorV1Event(`${transactionHash.toHexString()}-${logIndex}`);
-  let newReserveFactorMantissa = event.params.newReserveFactorMantissa;
-  let oldReserveFactorMantissa = event.params.oldReserveFactorMantissa;
+export function handleNewReserveFactorV1Event(event: NewReserveFactorEventV1): void {
+  let entity = new NewReserveFactorV1Event(`${event.transaction.hash.toHexString()}-${event.logIndex}`);
+  entity.transactionHash = event.transaction.hash;
+  entity.address = event.address;
+  entity.blockNumber = event.block.number;
+  entity.blockTimestamp = event.block.timestamp;
+  entity.logIndex = event.logIndex;
+  entity.newReserveFactorMantissa = event.params.newReserveFactorMantissa;
+  entity.oldReserveFactorMantissa = event.params.oldReserveFactorMantissa;
+  entity.save();  
+}
 
-  newReserveFactorEntity.transactionHash = transactionHash;
-  newReserveFactorEntity.contractAddress = contractAddress;
-  newReserveFactorEntity.blockNumber = blockNumber;
-  newReserveFactorEntity.blockTime = blockTime;
-  newReserveFactorEntity.logIndex = logIndex;
-  newReserveFactorEntity.newReserveFactorMantissa = newReserveFactorMantissa;
-  newReserveFactorEntity.oldReserveFactorMantissa = oldReserveFactorMantissa;
-  newReserveFactorEntity.save();  
+export function handleBorrowV1Call(call: BorrowCallV1): void {
+  let entity = new BorrowV1Call(`${call.transaction.hash.toHexString()}`);
+  entity.transactionHash = call.transaction.hash;
+  entity.address = call.to;
+  entity.from = call.from;
+  entity.to = call.to;
+  entity.blockNumber = call.block.number;
+  entity.blockTimestamp = call.block.timestamp;
+  entity.borrowAmount = call.inputs.borrowAmount;
+  entity.value0 = call.outputs.value0;
+  entity.save();
 }

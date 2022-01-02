@@ -23,16 +23,16 @@ dataSources:
         - name: Unitroller
           file: ./abis/Unitroller.json
       eventHandlers:
-        - event: NewPendingImplementationV1(address,address)
-          handler: handleNewPendingImplementationV1
-        - event: NewImplementationV1(address,address)
-          handler: handleNewImplementationV1
-        - event: NewPendingAdminV1(address,address)
-          handler: handleNewPendingAdminV1
-        - event: NewAdminV1(address,address)
-          handler: handleNewAdminV1
-        - event: FailureV1(uint256,uint256,uint256)
-          handler: handleFailureV1
+        - event: NewPendingImplementation(address,address)
+          handler: handleNewPendingImplementationV1Event
+        - event: NewImplementation(address,address)
+          handler: handleNewImplementationV1Event
+        - event: NewPendingAdmin(address,address)
+          handler: handleNewPendingAdminV1Event
+        - event: NewAdmin(address,address)
+          handler: handleNewAdminV1Event
+        - event: Failure(uint256,uint256,uint256)
+          handler: handleFailureV1Event
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: Comptroller
@@ -51,8 +51,8 @@ dataSources:
         - name: Comptroller
           file: ./abis/Comptroller.json
       eventHandlers:
-        - event: MarketListedV1(address)
-          handler: handleMarketListedV1
+        - event: MarketListed(address)
+          handler: handleMarketListedV1Event
       file: ./src/mapping.ts
 templates:
   - name: CToken
@@ -68,14 +68,18 @@ templates:
         - AccrueInterestV1Event
         - AccrueInterestV2Event
         - NewReserveFactorV1Event
+        - BorrowV1Call
       abis:
         - name: CToken
           file: ./abis/CToken.json
       eventHandlers:
-        - event: AccrueInterestV1(uint256,uint256,uint256)
-          handler: handleAccrueInterestV1
-        - event: AccrueInterestV2(uint256,uint256,uint256,uint256)
-          handler: handleAccrueInterestV2
-        - event: NewReserveFactorV1(uint256,uint256)
-          handler: handleNewReserveFactorV1
+        - event: AccrueInterest(uint256,uint256,uint256)
+          handler: handleAccrueInterestV1Event
+        - event: AccrueInterest(uint256,uint256,uint256,uint256)
+          handler: handleAccrueInterestV2Event
+        - event: NewReserveFactor(uint256,uint256)
+          handler: handleNewReserveFactorV1Event
+      callHandlers:
+        - function: borrow(uint256)
+          handler: handleBorrowV1Call
       file: ./src/mapping.ts
